@@ -4,9 +4,9 @@
 This is JavaScript Code that detects Web Browsers using the navigator.userAgent string.
 It is supported in Chrome <= 100.
 
-=============
-|It Detects:|
-=============
+*************
+*It Detects:*
+*************
  - Internet Explorer 6 - 11;
  - The new Edge Browser;
  - Chrome <= 100;
