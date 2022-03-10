@@ -12,3 +12,10 @@ It is supported in Chrome <= 100.
  - Chrome <= 100;
  - Safari >= 3.0;
  - Firefox > 1.0;
+
+*************************
+*Plans for the projecct:*
+*************************
+ - Detect browsers in multiple ways and use AI to figure out the real browser.
+ - prevent a new "Millenium Bug", by updating the repository as often as possible.
+ - detect most of the browsers in the world, with backwords compatibility.
