@@ -10,11 +10,10 @@ It is supported in Chrome <= 100.
 *It Detects:*
 *************
  - Internet Explorer 6 - 11;
- - The new Edge Browser;
  - Chrome <= 100;
  - Safari >= 3.0;
  - Firefox > 1.0;
- - Edge > 12;
+ - Edge > 12 (Including the Chromium Edge);
 *************************
 *Plans for the projecct:*
 *************************
