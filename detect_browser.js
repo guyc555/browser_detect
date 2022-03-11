@@ -11,11 +11,12 @@ function checkBrowser() {
   var is_msie = us_agent.indexOf("MSIE");
   var is_firefox = us_agent.indexOf("Firefox");
   var is_safari = us_agent.indexOf("Safari");
+  var is_brave = navigator.brave;
 
   //Start the guessing game.
   var index = 0;
   //Detect Chrome
-  if(is_chrome > -1 && is_edge === -1) {
+  if(is_chrome > -1 && is_edge === -1 && typeof is_brave !== "object") {
     index = is_chrome;
     while(us_agent.charAt(index) !== "/") index++;
     index++;
@@ -85,6 +86,17 @@ function checkBrowser() {
     }
     version = parseInt(version);
     browser = "Safari";
+  }
+  if(is_chrome > -1 && typeof is_brave == "object") {
+    index = is_chrome;
+    while(us_agent.charAt(index) !== "/") index++;
+    index++;
+    while(us_agent.charAt(index) !== ".") {
+      version += us_agent.charAt(index);
+      index++;
+    }
+    version = parseInt(version);
+    browser = "Brave";
   }
   document.getElementById("text_out").innerHTML = "You are using: " + browser + " " + version;
 }
